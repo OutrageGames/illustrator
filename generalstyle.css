@@ -4,7 +4,7 @@ body{
 	font-style: normal;
 	letter-spacing: 3px;
 	
-	background-color:#a8ecae;
+	background-color:white;
 	margin: 0px;
 }
 
@@ -27,7 +27,6 @@ body{
 
 .rights-text{
 	color: rgb(0, 0, 0);
-
 	left: 0;
 	bottom: 0;
 	width: 100%;
