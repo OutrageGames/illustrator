@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Outrage Games</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="images/site_icon.png"/>
+        <link rel="stylesheet" href="navstyle.css">
+        <link rel="stylesheet" href="generalstyle.css">
+        <link rel="stylesheet" href="images_style.css">
+        <!-- <link rel="preload" as="font" href="/fonts/kwfont.ttf" type="font/ttf" crossorigin="anonymous"> -->
+
+    </head>
+
+    <body>   
+             <div class="loadingScreen">
+<!--My content is the word "soundscape" but the o is replaced with a disc-->
+      <h1><img src="images/Banner.png" alt="disc" /></h1>
+    </div>
+	
+	
+            <div class="nav-menu"  oncontextmenu="false">
+                <img draggable="false" class="nav-logo" src="images/Banner.png">
+
+
+                <a class="nav-btn" href="index.html">KIDLIT</a>
+                <a class="nav-btn" href="index.html">MANGA</a>
+                <a class="nav-btn" href="contact.html">ABOUT ME</a>
+                <!-- <a class="nav-btn" href="manga.html">MANGA</a> -->
+                <!-- <a class="nav-btn" href="contact.html">CONTACT</a> -->
+
+                <!-- <a class="nav-social" href="mailto: outragegames@hotmail.com" target="_blank" >
+                    <img style="width: 30px;" src="images/emaillogo.png"/>
+                </a> -->
+            </div>
+
+        
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+                  
+  
+          <div class="outer-grid">
+              <div class="inner-grid">
+                  <img class="gal-img" id="myImg" alt="Jazz and his sunglasses!" src="https://www.dropbox.com/scl/fi/1zw2xzaxw7vj9ffey71ki/Jazz_Giraffe.png?rlkey=e8qgt12r5gcpghney93jjv1vs&st=1hicq7sh&raw=1" >
+                  <img class="gal-img" id="myImg" alt="Don't cry Benny..." src="images/Benny.png" >
+                  <img class="gal-img" id="myImg" alt="Tim?" src="images/Tim.png" >
+              </div>   
+          </div>
+		  
+		  <div class="body-text" style="font-size: 25px;">
+            *click to see the bigger picture*
+        </div>
+		  
+		  <br><br><br>
+		  
+		  <div class="outer-grid">
+              <div class="inner-grid">
+                  <img class="gal-img" id="myImg" alt="Happy me." src="images/Logo1.png" >
+                  <img class="gal-img" id="myImg" alt="Punk me." src="images/Logo2.png" >
+                  <img class="gal-img" id="myImg" alt="Nerdy me." src="images/Logo3.png" ><br>
+                  <img class="gal-img" id="myImg" alt="Angry me." src="images/Logo4.png" >
+                  <img class="gal-img" id="myImg" alt="Weird me." src="images/Logo5.png" >
+                  <img class="gal-img" id="myImg" alt="Cool me." src="images/Logo6.png" >
+              </div>   
+          </div>
+		  
+		  <br><br><br>
+		  
+		    <div class="body-text" style="font-size: 25px;">
+            *The Greek gods created for a Greek school history book:*
+        </div>
+		  
+		  <div class="outer-grid">
+              <div class="inner-grid">
+                  <img class="gal-img" id="myImg" alt="Ares, the spirit of battle." src="https://www.dropbox.com/scl/fi/u7h9y3irdrb53f5gu8wqr/ares.png?rlkey=jqt0hjn9v0y5n1jzghtxkdvet&st=30bssxjz&raw=1" > 
+                  <img class="gal-img" id="myImg" alt="Aphrodite, goddess of love." src="https://www.dropbox.com/scl/fi/ojx6be0yb3qn8mw5gsexs/afro.png?rlkey=c7x29tkr79izv9ctjfcm3xnld&st=08hxohhq&raw=1" >
+                  <img class="gal-img" id="myImg" alt="Hermes, the herald of the gods." src="https://www.dropbox.com/scl/fi/x6b90mu0v2wdu00ua9f6x/hermes.png?rlkey=4xu28oiwzaha5vc7unjvrfkcx&st=gtua5j7h&raw=1">
+                  <img class="gal-img" id="myImg" alt="" src="images/Logo4.png" >
+                  <img class="gal-img" id="myImg" alt="" src="images/Logo5.png" >
+                  <img class="gal-img" id="myImg" alt="" src="images/Logo6.png" >
+              </div>   
+          </div>
+		  
+  
+          <br>
+        
+
+  
+          <!-- <div class="rights-text" style="font-size: 12px; text-align: center;">
+              <p><i>@All rights reserved by Outrage Games | W0NK Creative Agency</i></p>
+          </div> -->
+  
+          <br><br><br><br><br>
+  
+  
+          <script>
+		  var loadingScreen = document.querySelector(".loadingScreen");
+
+window.addEventListener('load', function() {
+  loadingScreen.style.display = 'none';
+})
+
+
+
+              document.addEventListener('contextmenu', event => event.preventDefault());
+
+              // create references to the modal...
+              var modal = document.getElementById('myModal');
+              // to all images -- note I'm using a class!
+              var images = document.getElementsByClassName('gal-img');
+              // the image in the modal
+              var modalImg = document.getElementById("img01");
+              // and the caption in the modal
+              var captionText = document.getElementById("caption");
+  
+              // Go through all of the images with our custom class
+              for (var i = 0; i < images.length; i++) 
+              {
+                  var img = images[i];
+                  // and attach our click listener for this image.
+                  img.onclick = function(evt) 
+                  {
+                      modal.style.display = "block";
+                      modalImg.src = this.src;
+                      captionText.innerHTML = this.alt;
+                      if(this.className == "gal-img")
+                      {
+                          modalImg.style.width = '2000px';
+                      }
+                  }
+              }
+  
+              var span = document.getElementsByClassName("close")[0];
+  
+              span.onclick = function() {
+                  modal.style.display = "none";
+              }
+  
+              document.addEventListener('keydown', function(event){
+                  if(event.key === "Escape"){
+                      modal.style.display = "none";
+                  }
+              });
+  
+          </script>
+
+          
+  
+        <div class="rights-text" >
+            <p><i>@ All rights reserved by Marios Rafail Stinis</i></p>
+        </div>
+  
+
+        
+
+
+
+        
+        <br><br>
+
+
+
+    </body>
+
+</html>

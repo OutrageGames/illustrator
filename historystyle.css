@@ -1,0 +1,124 @@
+.outer-grid {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: auto;
+	padding-right: auto;
+	text-align: center;
+}
+.inner-grid {
+	/* display: block;
+	
+	padding-left: auto;
+	padding-right: auto; */
+
+	margin: auto;
+    padding: 5px;
+
+}
+
+.gal-img {
+	margin: 20px;
+	width: 15%;
+	box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.06);	
+	transition: ease-out;
+	-webkit-user-drag: none;
+	  border: 5px solid #88c08d;
+
+
+}
+
+
+#myImg {
+	/* border-radius: 5px; */
+	cursor: pointer;
+	transition: 0.1s;
+}
+
+#myImg:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+}
+
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	padding-top: 10px;
+	/* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: off;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(255, 255, 255, 0.9);
+	/* Black w/ opacity */
+}
+
+.modal-content {
+	-webkit-user-drag: none;
+	margin: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	max-width: 420px;
+}
+
+#caption {
+	margin: auto;
+	display: block;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+	color: black;
+	padding: 10px 0;
+	height: 150px;
+	font-size: 40px;
+}
+
+.modal-content,
+#caption {
+	animation-name: zoom;
+	animation-duration: 0.2s;
+}
+
+@keyframes zoom {
+	from {
+		transform: scale(0.9)
+	}
+	to {
+		transform: scale(1)
+	}
+}
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: red;
+	font-size: 100px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+	.modal-content {
+		width: 100%;
+	}
+}

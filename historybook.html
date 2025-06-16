@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Marios Rafail Stinis</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="images/site_icon.png"/>
+        <link rel="stylesheet" href="navstyle.css">
+        <link rel="stylesheet" href="generalstyle.css">
+        <link rel="stylesheet" href="historystyle.css">
+
+
+    </head>
+	
+
+
+
+    <body>   
+	
+             <div class="loadingScreen">
+<!--My content is the word "soundscape" but the o is replaced with a disc-->
+      <h1><img src="./images/Loading.gif" alt="disc" /></h1>
+    </div>
+	
+	
+            <div class="nav-menu"  oncontextmenu="false">
+                <img draggable="false" class="nav-logo" src="images/Banner.png">
+
+
+                <a class="nav-btn" href="index.html">KIDLIT</a>
+                <a class="nav-btn" href="historybook.html">HISTORY BOOK</a>
+                <a class="nav-btn" href="manga.html">MANGA</a>
+                <a class="nav-btn" href="about.html">ABOUT ME</a>
+                <!-- <a class="nav-btn" href="manga.html">MANGA</a> -->
+                <!-- <a class="nav-btn" href="contact.html">CONTACT</a> -->
+
+                <!-- <a class="nav-social" href="mailto: outragegames@hotmail.com" target="_blank" >
+                    <img style="width: 30px;" src="images/emaillogo.png"/>
+                </a> -->
+            </div>
+
+        
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+                  
+  
+         
+		 <br><br><br><br>
+		  
+		    <div class="body-text" style="font-size: 25px;">
+            The Greek gods created for a Greek school history book:
+        </div>
+		  
+		  <div class="outer-grid">
+              <div class="inner-grid">
+                  <img class="gal-img" id="myImg" alt="Ares, the spirit of battle." src="https://www.dropbox.com/scl/fi/u7h9y3irdrb53f5gu8wqr/ares.png?rlkey=jqt0hjn9v0y5n1jzghtxkdvet&st=30bssxjz&raw=1" > 
+				  <img class="gal-img" id="myImg" alt="Aphrodite, goddess of love." src="https://www.dropbox.com/scl/fi/ojx6be0yb3qn8mw5gsexs/afro.png?rlkey=c7x29tkr79izv9ctjfcm3xnld&st=08hxohhq&raw=1" >
+                  <img class="gal-img" id="myImg" alt="Hermes, the herald of the gods." src="https://www.dropbox.com/scl/fi/x6b90mu0v2wdu00ua9f6x/hermes.png?rlkey=4xu28oiwzaha5vc7unjvrfkcx&st=gtua5j7h&raw=1">
+                  <img class="gal-img" id="myImg" alt="Apollo, god of archery." src="https://www.dropbox.com/scl/fi/uugo0e36pnqw6xz2me5x0/apol.png?rlkey=d8drjf8i7qp0ygayvdev18r9g&st=4f30akut&raw=1" >
+                  <img class="gal-img" id="myImg" alt="Artemis, the goddess of wild animals." alt="" src="https://www.dropbox.com/scl/fi/uwrzg21gwjrjsevndu57d/arte.png?rlkey=pug4vctwvdz1oy198nhpdv6oe&st=44rws2q3&raw=1" >
+                  <img class="gal-img" id="myImg" alt="Hera, the goddess of family." src="https://www.dropbox.com/scl/fi/m96v0vvafkanyf8ff4s3y/ira.png?rlkey=6pt9qu9z28pqc9bcw9eu0vbjf&st=8f2areow&raw=1" >
+                  <img class="gal-img" id="myImg" alt="Athena, goddess of wisdom." src="https://www.dropbox.com/scl/fi/zf5nkfmh0pleljg0kw20f/ath.png?rlkey=eagvde0fh9x36v3hbx5raj0rf&st=u7trpqmc&raw=1" >
+                  <img class="gal-img" id="myImg" alt="Zeus, the thunder god." src="https://www.dropbox.com/scl/fi/j7po8b9p4tgt5yr1eh8cn/dias.png?rlkey=gc8tay3fg5d93x4y4n05kddf6&st=s2zbgu31&raw=1" >
+                  <img class="gal-img" id="myImg" alt="Demeter, goddess of the harvest and agriculture." src="https://www.dropbox.com/scl/fi/ktxdmykls8xei4ioz9hz1/dim.png?rlkey=s4ykjn1bznhlurk503abo4g2t&st=ympoz47m&raw=1" >
+                  <img class="gal-img" id="myImg" alt="Dionysus, the god of wine-making" src="https://www.dropbox.com/scl/fi/1qoazdw7b82g147strrwo/dion.png?rlkey=b62lxfvrzj4plit77prdtu723&st=fz1uuzmx&raw=1" >
+                  <img class="gal-img" id="myImg" alt="Hephaestus, god of artisans." src="https://www.dropbox.com/scl/fi/ljvbzgfhpwuy4p3oi6ta6/ife.png?rlkey=dgr4b1ep3ogzoxnkcg99ezrx1&st=srcp4r4o&raw=1" >
+                  <img class="gal-img" id="myImg" alt="Poseidon, god of the sea." src="https://www.dropbox.com/scl/fi/4lf1yrk5f4wl66ntlqmio/pos.png?rlkey=sympllzlmb3c8qa7gswi0ecfa&st=l8wx317h&raw=1" >				  
+              </div>   
+          </div>
+		  
+  
+          <br>
+        
+
+
+
+  
+          <br><br><br><br><br>
+  
+  
+          <script>
+		  var loadingScreen = document.querySelector(".loadingScreen");
+
+window.addEventListener('load', function() {
+  loadingScreen.style.display = 'none';
+})
+
+
+
+              document.addEventListener('contextmenu', event => event.preventDefault());
+
+              // create references to the modal...
+              var modal = document.getElementById('myModal');
+              // to all images -- note I'm using a class!
+              var images = document.getElementsByClassName('gal-img');
+              // the image in the modal
+              var modalImg = document.getElementById("img01");
+              // and the caption in the modal
+              var captionText = document.getElementById("caption");
+  
+              // Go through all of the images with our custom class
+              for (var i = 0; i < images.length; i++) 
+              {
+                  var img = images[i];
+                  // and attach our click listener for this image.
+                  img.onclick = function(evt) 
+                  {
+                      modal.style.display = "block";
+                      modalImg.src = this.src;
+                      captionText.innerHTML = this.alt;
+                      if(this.className == "gal-img")
+                      {
+                          modalImg.style.width = '2000px';
+                      }
+                  }
+              }
+  
+              var span = document.getElementsByClassName("close")[0];
+  
+              span.onclick = function() {
+                  modal.style.display = "none";
+              }
+  
+              document.addEventListener('keydown', function(event){
+                  if(event.key === "Escape"){
+                      modal.style.display = "none";
+                  }
+              });
+  
+          </script>
+
+          
+  
+        <div class="rights-text" >
+            <p><i>@ All rights reserved by Marios Rafail Stinis</i></p>
+        </div>
+  
+
+        
+
+
+
+        
+        <br><br>
+
+
+
+    </body>
+
+</html>

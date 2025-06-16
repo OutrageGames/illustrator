@@ -1,0 +1,43 @@
+body{
+	font-family: 'kwfontregular';
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: 3px;
+	
+	background-color:#a8ecae;
+	margin: 0px;
+}
+
+.loadingScreen {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  background-color: #a8ecae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-text{
+	text-align: center;
+	color: rgb(0, 0, 0);
+	/* text-shadow: -5px 5px 5px black; */
+}
+
+.rights-text{
+	color: rgb(0, 0, 0);
+
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+@font-face {
+    font-family: 'kwfontregular';
+    src: url('fontkit2/ihatcs__-webfont.woff2') format('woff2'),
+         url('fontkit2/ihatcs__-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
