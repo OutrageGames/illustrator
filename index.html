@@ -10,9 +10,9 @@
         <link rel="stylesheet" href="navstyle.css">
         <link rel="stylesheet" href="generalstyle.css">
         <link rel="stylesheet" href="indexstyle.css">
+        <link rel="stylesheet" href="eyesstyle.css">
 
     </head>
-	
 
 
 
@@ -22,7 +22,20 @@
 	
 	
             <div class="nav-menu"  oncontextmenu="false">
-                <img draggable="false" class="nav-logo" src="images/Banner.png">
+<img draggable="false" class="nav-logo" src="images/Banner.png">
+
+
+<div class="eyes-wrapper">
+  <div class="eye">
+    <div class="pupil"></div>
+  </div>
+  <div class="eye">
+    <div class="pupil"></div>
+  </div>
+</div>
+
+
+
 
 
 <a class="nav-btn" href="index.html"><span style = "background-image: url('images/coloringon.png');" ></span></a>
@@ -32,87 +45,133 @@
 <a class="nav-btn" href="about.html"><span style = "background-image: url('images/meoff.png');" ></span></a>
 				
             </div>
-
-        
-
-        <!-- <div id="myModal" class="modal"> -->
-            <!-- <span class="close">&times;</span> -->
-            <!-- <img class="modal-content" id="img01"> -->
-            <!-- <div id="caption"></div> -->
-          <!-- </div> -->
-                  
-  
-          <div class="outer-grid">
-              <div class="inner-grid">
-                  <img class="gal-img" id="myImg" alt="Jazz and his sunglasses!" src="https://www.dropbox.com/scl/fi/1zw2xzaxw7vj9ffey71ki/Jazz_Giraffe.png?rlkey=e8qgt12r5gcpghney93jjv1vs&st=1hicq7sh&raw=1" >
-                  <img class="gal-img" id="myImg" alt="Don't cry Benny..." src="https://www.dropbox.com/scl/fi/imeq6axr6ttnvta5g0je0/Benny.png?rlkey=mw7ozla914ueuczzc1j6b0lpy&st=8nvwx4va&raw=1" >
-                  <img class="gal-img" id="myImg" alt="Tim?" src="https://www.dropbox.com/scl/fi/iz80u5lz91nnjnuqzjd8e/Tim.png?rlkey=l5exoq4giek96m4at3zzi1u8j&st=wig5ugbk&raw=1" >
-              </div>   
-          </div>
-		  
-		  <div class="body-text" style="font-size: 25px;">
-            *click to see the bigger picture*
+			<br><br><br>
+        <div class="body-text" style="font-size: 70px;">
+            Activity Books!
         </div>
-		  
-		  <br><br><br>
-		  
-<div class="outer-grid">
-  <div class="inner-grid">
-    <img class="gal-img" src="https://www.dropbox.com/scl/fi/2x0f9qhw80v727oug7kw4/Logo1.png?rlkey=5s3uq6sacstf6tgqbunjyit6o&st=xygg880j&raw=1" onclick="openModal(0)">
-  </div>
-</div>
-
-<!-- Modal structure -->
-<div id="myModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="modalImg">
-  <div id="caption"></div>
-  
-  <!-- Next/previous controls -->
-  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-  <a class="next" onclick="changeSlide(1)">&#10095;</a>
-</div>
-
-
-
-
-
-		  
-		  <br><br><br>
-		  
-		  <div class="outer-grid">
-              <div class="inner-grid">
-                  <!-- <img class="gal-img" id="myImg" alt="Happy me." src="https://www.dropbox.com/scl/fi/50kiu4kawkov06lbdnn9s/town.png?rlkey=pl7soh60v3sh5gabfsfkzh4bg&st=cx3hwn05&raw=1" > -->
-                  <!-- <img class="gal-img" id="myImg" alt="Punk me." src="https://www.dropbox.com/scl/fi/we5jcqk6q9pe4f9iaeeam/vill.png?rlkey=mbjbo6fbh41mgwczy8usk32xe&st=crg7ogyo&raw=1" ><br> -->
-                  <!-- <img class="gal-img" id="myImg" alt="Nerdy me." src="https://www.dropbox.com/scl/fi/spy3ep3bqhmi9tvq4rwna/school.png?rlkey=7juddjsnnn2qntf021h0cfnkr&st=yf9m6id8&raw=1" > -->
-                  <!-- <img class="gal-img" id="myImg" alt="Angry me." src="https://www.dropbox.com/scl/fi/yhhyatl512p7y0hkz66ml/class.png?rlkey=kf63a5tndidth29orepswpgkl&st=i7jm3uff&raw=1" > -->
-                  <!-- <img class="gal-img" id="myImg" alt="Weird me." src="https://www.dropbox.com/scl/fi/yhhyatl512p7y0hkz66ml/class.png?rlkey=kf63a5tndidth29orepswpgkl&st=i7jm3uff&raw=1" > -->
-                  <!-- <img class="gal-img" id="myImg" alt="Cool me." src="images/Logo6.png" > -->
-              </div>   
-          </div>
-		  
-		  <br><br><br>
-		  
-
-
-
-		  
-  
-          <br>
         
 
+
+		
+		
   
-          <!-- <div class="rights-text" style="font-size: 12px; text-align: center;">
-              <p><i>@All rights reserved by Outrage Games | W0NK Creative Agency</i></p>
-          </div> -->
   
-          <br><br><br><br><br>
+		  
+		  <br>
+
+  <style>
+    body {
+      margin: 0;
+	  
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 10px;
+	  width: 80%;
+	  margin: auto;
+    }
+	.gallery-item {
+	  background: white;
+	  border-radius: 8px;
+	  overflow: hidden;
+	  box-shadow: 0 0px 15px rgba(0,0,0,0.4);
+	  text-align: center;
+	  padding: 10px;
+	  transition: transform 0.3s ease;
+	}
+	.gallery-item img {
+	  width: 100%;
+	  aspect-ratio: 1 / 1;
+	  object-fit: contain;
+	  background-color: #fff;
+	  display: block;
+	  margin-bottom: 8px;
+	  
+	}
+    .caption {
+      font-size: 0.9em;
+    }
+
+
+.gallery-item:hover {
+  transform: scale(2.2);
+  z-index: 20;
+}
+
+  </style>
+  
+  
+<div class="gallery">
+  <div class="gallery-item">
+    <img src="./images/coloring/c1.png" >
+  </div>
+  <div class="gallery-item">
+    <img src="./images/coloring/c2.png" >
+  </div>
+  <div class="gallery-item">
+    <img src="./images/coloring/c3.png" >
+  </div>
+  <div class="gallery-item">
+    <img src="./images/coloring/c4.png" >
+  </div>
+  <div class="gallery-item">
+    <img src="./images/coloring/c5.png" >
+  </div>
+
+  <div class="gallery-item">
+    <img src="./images/coloring/c7.png" >
+  </div>
+  <div class="gallery-item">
+    <img src="./images/coloring/c8.png" >
+  </div>
+  <div class="gallery-item">
+    <img src="./images/coloring/c9.png" >
+  </div>
+  <div class="gallery-item">
+    <img src="./images/coloring/c10.png" >
+  </div>
+  <div class="gallery-item">
+    <img src="./images/coloring/c11.png" >
+  </div>
+  
+</div>
+
+  
+        <div class="rights-text" style="font-size: 12px; text-align: center;">
+            <p><i>@All rights reserved by Marios Rafail Stinis</i></p>
+        </div>
+
+        <br><br><br>
+
   
   
 <script>
 
+document.addEventListener('mousemove', (e) => {
+  document.querySelectorAll('.eye').forEach(eye => {
+    const pupil = eye.querySelector('.pupil');
+    const rect = eye.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
 
+    const dx = e.clientX - centerX;
+    const dy = e.clientY - centerY;
 
+    const distance = Math.min(20, Math.hypot(dx, dy));
+    const angle = Math.atan2(dy, dx);
+
+    const offsetX = Math.cos(angle) * distance;
+    const offsetY = Math.sin(angle) * distance;
+
+pupil.style.transform = `translate(${offsetX - 8}px, ${offsetY - 8}px)`;
+
+  });
+});
 
 
 

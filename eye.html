@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfect Circle Eye</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f0f0f0;
+    }
+
+    .eye {
+      width: 200px;
+      height: 200px;
+      background: white;
+      border: 5px solid black;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pupil {
+      width: 40px;
+      height: 40px;
+      background: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="eye">
+    <div class="pupil" id="pupil"></div>
+  </div>
+
+  <script>
+    const eye = document.querySelector('.eye');
+    const pupil = document.getElementById('pupil');
+
+    document.addEventListener('mousemove', (e) => {
+      const eyeRect = eye.getBoundingClientRect();
+      const centerX = eyeRect.left + eyeRect.width / 2;
+      const centerY = eyeRect.top + eyeRect.height / 2;
+
+      const dx = e.clientX - centerX;
+      const dy = e.clientY - centerY;
+
+      const angle = Math.atan2(dy, dx);
+      const maxDist = 70; // maximum distance from center the pupil can move
+
+      const distance = Math.min(maxDist, Math.hypot(dx, dy));
+      const offsetX = Math.cos(angle) * distance;
+      const offsetY = Math.sin(angle) * distance;
+
+      pupil.style.transform = `translate(${offsetX - 20}px, ${offsetY - 20}px)`; 
+      // 20 = half of pupil size to keep center aligned
+    });
+  </script>
+</body>
+</html>

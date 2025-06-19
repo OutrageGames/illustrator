@@ -24,12 +24,13 @@
   display: inline-block;
   width: 100px;
   height: 100px;
+  padding: 20px;
 }
 
 .nav-btn span {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 
   background-size: cover;
 }

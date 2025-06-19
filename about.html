@@ -4,13 +4,14 @@
 
     <head>
 
-        <title>Outrage Games</title>
+        <title>Marios Rafail Stinis</title>
         <meta charset="utf-8">
         <link rel="shortcut icon" href="images/site_icon.png"/>
         <link rel="stylesheet" href="navstyle.css">
         <link rel="stylesheet" href="homestyle.css">
         <link rel="stylesheet" href="generalstyle.css">
         <link rel="stylesheet" href="images_style.css">
+        <link rel="stylesheet" href="eyesstyle.css">
 
     </head>
 
@@ -18,6 +19,16 @@
 
         <div class="nav-menu"  oncontextmenu="false">
             <img draggable="false" class="nav-logo" src="images/Banner.png">
+			
+			
+<div class="eyes-wrapper">
+  <div class="eye">
+    <div class="pupil"></div>
+  </div>
+  <div class="eye">
+    <div class="pupil"></div>
+  </div>
+</div>
 			
 <a class="nav-btn" href="index.html"><span style = "background-image: url('images/coloringoff.png');" ></span></a>
 <a class="nav-btn" href="manga.html"><span style = "background-image: url('images/mangaoff.png');" ></span></a>
@@ -29,25 +40,20 @@
         </div>
 
         <br><br><br>
+        <div class="body-text" style="font-size: 70px;">
+            About ME!
+        </div>
 
-        <div class="body-text" style="font-size: 28px; text-transform:uppercase;">
-            My name is Marios a
+        <div class="body-text" style="font-size: 28px; text-align: justify; width: 80%; margin:auto;">
+Hi! I’m a full-time illustrator and part-time pencil hoarder. I specialize in bringing characters to life, whether they’re goofy, grumpy, magical,
+or wearing way too many hats (literally). From children’s books to comics and quirky character designs, I love turning ideas into eye-catching visuals that make people smile, gasp, or say “aww.”
+<br><br>
+I can help with storytelling, character design, book illustration, and turning weird doodles into polished magic. Basically, if it needs a little more charm, I’m your artist.
+<br><br>
+Let’s make something fun together!
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <a class="nav-btn" style = "text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.479);"
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+
+
 
         </div>
 
@@ -55,13 +61,39 @@
         <br><br><br><br><br>
 
 
-        <div class="rights-text" >
-            <p><i>@ All rights reserved by Marios Rafail Stinis</i></p>
+        <div class="rights-text" style="font-size: 12px; text-align: center;">
+            <p><i>@All rights reserved by Marios Rafail Stinis</i></p>
         </div>
-        
-        <br><br>
+
+        <br><br><br>
+		
+
+<script>
 
 
+document.addEventListener('mousemove', (e) => {
+  document.querySelectorAll('.eye').forEach(eye => {
+    const pupil = eye.querySelector('.pupil');
+    const rect = eye.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+
+    const dx = e.clientX - centerX;
+    const dy = e.clientY - centerY;
+
+    const distance = Math.min(20, Math.hypot(dx, dy));
+    const angle = Math.atan2(dy, dx);
+
+    const offsetX = Math.cos(angle) * distance;
+    const offsetY = Math.sin(angle) * distance;
+
+pupil.style.transform = `translate(${offsetX - 8}px, ${offsetY - 8}px)`;
+
+  });
+});
+
+
+</script>
 
     </body>
 
